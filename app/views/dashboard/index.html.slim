@@ -16,7 +16,7 @@
           button.btn id='Search-btn'
             i.fa.fa-search
             | Search
-          input id="search-input" type="text" placeholder="Search" 
+          input id="search-input" type="text" placeholder="Search"
             style id="m-search"
 
           - unless @category.nil?
@@ -34,19 +34,6 @@
           td Members
           td Activity
       tbody
-        tr 
-          td
-            img.img-rounded src="http://www.gravatar.com/avatar/f38a48af2f0b8000d3cd140da597017d.jpg?s=20"
-            | 5566 Fans Club
-          td
-            span
-              img.img-circle src="http://www.gravatar.com/avatar/dacaed17fc057f67d857ca65ec52ba8f.jpg?s=20"
-              | sntc06
-          - if @category.nil?
-            td Others
-          td 55
-          td 66
-          td 5566 days ago
         = render @groups.to_a
 
 = render template: 'groups/new'
